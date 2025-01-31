@@ -1,0 +1,80 @@
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    font-family: "Outfit";
+    display: flex;
+    flex-direction: column;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+main {
+    width: 34.5rem;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: hsl(216, 50%, 16%);
+    @media screen and (max-width: 375px) {
+        width: 30rem;       
+    }
+}
+.cube {
+    border-radius: 1rem;
+}
+.view {
+    border-radius: 1rem;
+    width: 89%;
+    padding: 13rem;
+    position: absolute;
+    top: 2rem;
+    display: none;
+    background: hsl(178, 100%, 50%, .5);
+}
+.cube:hover + .view {
+    display: block;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+h1, .span2 {
+    color: hsl(0, 0%, 100%);
+}
+h1:hover, .span2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid hsl(215, 32%, 27%);
+}
+.row1 p {
+    display: flex;
+    gap: 1rem;
+}
+.span1 {
+    color: hsl(178, 100%, 50%);
+}
+.row2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.row2 img {
+    width: 3rem;
+    border: .1rem solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
